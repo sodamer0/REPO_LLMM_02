@@ -1,0 +1,3 @@
+crear una funcion que procese una lista de valores numéricos y devuelva un objeto con la media de esos valores, el valor máximo y mínimo.
+Considerar que la media se calcula como la suma de datos dividido por número de valores. El número de datos pasados a la función es variable y no se usan
+los métodos del objeto array.

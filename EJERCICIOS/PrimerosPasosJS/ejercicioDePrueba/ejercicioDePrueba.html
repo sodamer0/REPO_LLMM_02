@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tickets vendidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Medidor de tickets vendidos</h2>
+
+    <!-- Inputs -->
+    <label>
+        Tickets vendidos:
+        <input type="number" id="inputVendidos" min="0" value="64">
+    </label>
+    <label>
+        Tickets faltan por vender:
+        <input type="number" id="faltanVender" min="0" value="100">
+    </label>
+    <label>
+        Total de tickets:
+        <input type="number" id="inputTotal" min="1" value="100">
+    </label>
+
+    <button id="btnActualizar">Actualizar</button>
+
+    <!-- Barra -->
+    <div class="barra-contenedor">
+        <div id="barra" class="barra"></div>
+    </div>
+
+    <p id="texto">64 / 100 tickets vendidos</p>
+    <p id="texto2">(100 - 64) / 100 tickets faltan por vender</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
