@@ -137,4 +137,4 @@ console.log(`El consumo ha sido de ${resultado} L/Km.`);
 
 let prompt5 = require('prompt-sync')();
 
-let horas = parseInt(prompt5('Introduce el número de horas');
+let horas = parseInt(prompt5('Introduce el número de horas'));
