@@ -1,0 +1,74 @@
+MODIFICAR EL DIV,CONTENEDOR
+MODIFICAR POR ID,
+MODIFICAR POR CLASS,
+MODIFICAR POR QUERY,
+MODIFICAR POR QUERY ALL,
+MODIFICAR POR LISTENER.
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Marcas de Coches - DOM</title>
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; }
+    .europeo { color: blue; } /* Las europeas serán azules */
+    #toyota, #mazda { color: red; } /* Las japonesas serán rojas */
+    button { margin-top: 20px; padding: 10px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+ <h1>Listado de Marcas</h1>
+
+<div id="contenedor-marcas">
+<p id="toyota">Marca Japonesa: Toyota</p>
+<p id="mazda">Marca Japonesa: Mazda</p>
+
+<p class="europeo">Marca Europea: BMW</p>
+<p class="europeo">Marca Europea: Renault</p>
+</div>
+
+<button onclick="modificarJaponesas()">Modificar Japonesas</button>
+
+<script>
+    function modificarJaponesas() {
+        // Seleccionar los elementos japoneses por su ID
+        const toyota = document.getElementById('toyota');
+        const mazda = document.getElementById('mazda');
+        
+        // Modificar el texto de Toyota
+        toyota.textContent = 'Marca Japonesa MODIFICADA: Toyota';
+        
+        // Modificar el texto de Mazda
+        mazda.textContent = 'Marca Japonesa MODIFICADA: Mazda';
+        
+        // Cambiar el estilo de Toyota
+        toyota.style.fontWeight = 'bold';
+        toyota.style.fontSize = '18px';
+        
+        // Cambiar el estilo de Mazda
+        mazda.style.fontWeight = 'bold';
+        mazda.style.fontSize = '18px';
+        
+        // Alternativamente, usando querySelector para seleccionar ambos a la vez
+        /*
+        const japonesas = document.querySelectorAll('#toyota, #mazda');
+        japonesas.forEach(marca => {
+            marca.textContent = marca.textContent.replace('Japonesa', 'Japonesa MODIFICADA');
+            marca.style.fontWeight = 'bold';
+            marca.style.fontSize = '18px';
+        });
+        */
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
