@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio02</title>
+</head>
+<body>
+    <p class="texto">Párrafo 1</p>
+    <p class="texto">Párrafo 2</p>
+    <p class="texto">Párrafo 3</p>
+
+    <p class="texto2">Párrafo 4</p>
+    <p class="texto2">Párrafo 5</p>
+    <p class="texto2">Párrafo 6</p>
+
+    <p class="texto3">Párrafo 7</p>
+    <p class="texto3">Párrafo 8</p>
+    <p class="texto3">Párrafo 9</p>
+
+    <script>
+ 
+        const parrafos = document.getElementsByClassName('texto');
+
+        for (let i = 0; i < parrafos.length; i++) {
+        parrafos[i].style.color = 'red';
+        }
+
+        const parrafos2 = document.querySelectorAll('.texto2');
+        parrafos2.forEach(elemento => {
+            elemento.style.color = 'magenta';
+        });
+
+
+        const parrafos3 = document.querySelectorAll('.texto3');
+
+        for (let i=0; i < parrafos.length; i++) {
+            parrafos3[i].style.color = "cyan";
+        }
+
+
+    </script>
+</body>
+</html>

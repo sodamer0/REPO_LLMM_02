@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio04</title>
+    <style>
+        .item {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        button {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <p id="mensaje">Texto original</p>
+    <button id="boton">Cambiar texto otra vez</button> 
+    <script>
+
+
+        const mensajillo = document.getElementById('mensaje');
+        mensajillo.textContent = 'Texto Modificado con JavaSript';
+
+        boton.addEventListener("click", () => {
+            mensaje.textContent = "Texto Original 2";
+        } );
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio05</title>
+    <style>
+    .caja {
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid black;
+        display: inline-block;
+    }
+    .caja2 {
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid black;
+        display: inline-block;
+    }
+</style>
+    
+</head>
+<body>
+    <div class="caja">Caja 1</div>
+    <div class="caja">Caja 2</div>
+
+    <div class="caja2">Caja 3</div>
+    <div class="caja2">Caja 4</div>
+    
+    <script>
+
+        const cajonera = document.getElementsByClassName('caja');
+
+        for (let i = 0; i < cajonera.length; i++) {
+            cajonera[i].style.backgroundColor = 'gray';
+        }
+
+        const cajonera2 = document.querySelectorAll('.caja2');
+        cajonera2.forEach(elemento => {
+            elemento.style.backgroundColor = "cyan";
+        });
+        
+
+    </script>
+</body>
+</html>

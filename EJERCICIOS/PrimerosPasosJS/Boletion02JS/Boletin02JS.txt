@@ -1,0 +1,92 @@
+EJERCICIOS TIPO PARA APRENDIZAJE
+Si sabes hacer estos ejercicios, tienes dominado:
+    • Selección de elementos
+    • Manipulación del DOM
+    • Eventos básicos
+    • Diferencias entre métodos
+EJERCICIO 1 ·
+Enunciado
+Dado el siguiente código HTML:
+<h1 id="titulo">Bienvenido</h1>
+    1. Escribe el código JavaScript necesario para:
+        ◦ Seleccionar el elemento <h1>
+        ◦ Cambiar su texto a: "Hola Mundo"
+
+
+EJERCICIO 2 · 
+Enunciado
+Observa el siguiente HTML:
+<p class="texto">Párrafo 1</p>
+<p class="texto">Párrafo 2</p>
+<p class="texto">Párrafo 3</p>
+    1. Selecciona todos los párrafos.
+    2. Cambia el color del texto a azul usando JavaScript.
+
+EJERCICIO 3 · 
+Enunciado
+Dado el siguiente HTML:
+<ul>
+  <li class="item">Uno</li>
+  <li class="item">Dos</li>
+  <li class="item">Tres</li>
+</ul>
+
+<button id="boton">Cambiar</button>
+Escribe el código JavaScript que haga lo siguiente:
+    1. Seleccione el botón.
+    2. Cuando el usuario haga click:
+        ◦ Cambie el texto de todos los <li> a "Elemento modificado"
+        ◦ Cambie su color a verde
+
+
+
+EJERCICIO 4 · (selección y cambio de texto)
+Enunciado
+Dado el siguiente HTML:
+<p id="mensaje">Texto original</p>
+    1. Selecciona el párrafo.
+    2. Cambia su texto a "Texto modificado con JavaScript".
+
+
+EJERCICIO 5 · MEDIA (clases y estilos)
+Enunciado
+Observa el siguiente HTML:
+<div class="caja">Caja 1</div>
+<div class="caja">Caja 2</div>
+    1. Selecciona todas las cajas.
+    2. Cambia su color de fondo a gris.
+
+EJERCICIO 6 · (querySelector)
+Enunciado
+Dado el siguiente HTML:
+<section>
+  <p>Primer párrafo</p>
+  <p>Segundo párrafo</p>
+</section>
+    1. Selecciona solo el primer párrafo.
+    2. Cambia su color de texto a rojo.
+
+EJERCICIO 7 · (evento click)
+Enunciado
+Observa el siguiente HTML:
+<button id="btn">Pulsar</button>
+<p id="texto">Esperando acción...</p>
+    1. Selecciona el botón.
+    2. Cuando se haga click:
+        ◦ Cambia el texto del párrafo a "Botón pulsado"
+
+
+EJERCICIO 8 · (listas + evento)
+Enunciado
+Dado el siguiente HTML:
+<ul>
+  <li class="nota">Nota 1</li>
+  <li class="nota">Nota 2</li>
+  <li class="nota">Nota 3</li>
+</ul>
+
+<button id="btnCambiar">Cambiar notas</button>
+Escribe el código JavaScript que haga lo siguiente:
+    1. Al pulsar el botón:
+        ◦ Cambie el texto de todas las notas a "Aprobado"
+        ◦ Cambie el color del texto a verde

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio02</title>
+    <style>
+
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li class="item">Uno</li>
+        <li class="item">Dos</li>
+        <li class="item">Tres</li>
+    </ul>
+
+    <button id="boton" onclick = "ponerVerde()">Verde</button>
+
+    <button id="boton2" onclick = "ponerCacaDeArale()">Violeta</button>
+
+    <button id="boton3" onclick = "ponerRojoLenin()">Rojo</button>
+
+    <script>
+ 
+        function ponerVerde () {
+            const listaDes = document.getElementsByClassName('item');
+            for (let i = 0; i < listaDes.length; i++) {
+                listaDes[i].textContent = 'Elemento Modificado.';
+                listaDes[i].style.color = 'green';
+            }
+        }
+
+        function ponerCacaDeArale () {
+            const listaDes = document.querySelectorAll('.item')
+            listaDes.forEach(elemento => {
+                elemento.textContent = 'Elemento Modificado 2';
+                elemento.style.color = 'pink';
+            });
+        }
+
+        function ponerRojoLenin () {
+            const listaDes = document.querySelectorAll('.item') 
+            listaDes.forEach(elemento => {
+                elemento.textContent = 'Elemento Modificado 3';
+                elemento.style.color = 'red'
+            });
+        }
+        
+
+
+        
+
+
+    </script>
+</body>
+</html>
