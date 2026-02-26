@@ -82,7 +82,8 @@ const precio = 200;
 const iva = 21 / 100;
 const compra = precio + (precio * iva);
 
-console.log(compra);
+
+console.log("El precio total de compra, IVA incluído es de", compra,"€");
 
 //EJERCICIO_02//
 
@@ -90,9 +91,9 @@ const lado = 40;
 const perimetro = 4 * lado;
 const area = lado * lado;
 
-console.log(area);
+console.log("El área de un cuadrado de lado:", lado, "unidades es de",area, "unidades.");
 
-console.log(perimetro);
+console.log("El perímetro de un cuadrado de lado:", lado, "unidades es de", perimetro, "unidades.");
 
 //EJERCICIO_03//
 
@@ -100,18 +101,18 @@ const prompt = require('prompt-sync')();
 
 let nombre = prompt('Escribe tu nombre: ');
 
-console.log(`Hola ${nombre}.`);
+console.log(`Hola, mi nombre es ${nombre}.`);
 
 
 //EJERCICIO_04//
 
-let prompt3 = require('prompt-sync')();
 
-let num1 = parseInt(prompt3('Introduce un número: '));
 
-let num2 = parseInt(prompt3('Introduce otro número: '));
+let num1 = parseInt(prompt('Introduce un número: '));
 
-let num3 = parseInt(prompt3('Introduce un último número: '));
+let num2 = parseInt(prompt('Introduce otro número: '));
+
+let num3 = parseInt(prompt('Introduce un último número: '));
 
 let suma = num1 + num2 + num3;
 
@@ -121,11 +122,11 @@ console.log(`La media de los números: ${num1}, ${num2} y ${num3} es ${media}.`)
 
 //EJERCICIO_05//
 
-let prompt4 = require('prompt-sync')();
 
-let Km_recorridos = parseInt(prompt4('Introduce la distancia recorrida: '));
 
-let L_consumidos = parseInt(prompt4('Introduce los litros consumidos: '));
+let Km_recorridos = parseInt(prompt('Introduce la distancia recorrida: '));
+
+let L_consumidos = parseInt(prompt('Introduce los litros consumidos: '));
 
 let L_Km = (L_consumidos / Km_recorridos);
 
@@ -135,6 +136,6 @@ console.log(`El consumo ha sido de ${resultado} L/Km.`);
 
 //EJERCICIO_06//
 
-let prompt5 = require('prompt-sync')();
 
-let horas = parseInt(prompt5('Introduce el número de horas'));
+
+let horas = parseInt(prompt('Introduce el número de horas'));

@@ -1,0 +1,55 @@
+<!--
+EJERCICIO 7 🎯
+Dado el siguiente HTML:
+<button id="btn">Pulsar</button>
+<p id="texto">Esperando acción...</p>
+<p id="contador">Clicks: 0</p>
+
+1. Cuando se haga click en el botón:
+   - Cambia el texto del párrafo #texto a "Botón pulsado"
+   - Incrementa en 1 el número mostrado en #contador
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01 BOLETÍN 4 - REPASO DOM</title>
+
+</head>
+
+
+
+<body>
+
+    <button id="btn">Pulsar</button>
+    <p id="texto">Esperando acción...</p>
+    <p id="contador">Clicks: 0</p>
+    
+</body>
+
+    <script>
+
+        const boton = document.querySelector('#btn');
+
+        let texto = document.querySelector('#texto');
+
+        let contador = document.querySelector('#contador');
+
+        let conteo = 0;
+
+        boton.addEventListener("click", function () {
+
+            texto.textContent = "Botón pulsado.";
+
+            contador.textContent = `Clicks: ${++conteo}`;
+
+        });
+
+
+
+    </script>
+
+</html>

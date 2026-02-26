@@ -1,0 +1,46 @@
+<!--
+EJERCICIO 3 🔢
+Dado el siguiente HTML:
+<p>Contador: <span id="contador">0</span></p>
+<button id="btnSumar">Sumar 1</button>
+
+Escribe JavaScript para que cada click en el botón incremente en 1 el número mostrado
+en el <span>.
+----------------------------------------------------------------
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01 BOLETÍN 4 - REPASO DOM</title>
+
+</head>
+
+    <p>Contador: <span id="contador">0</span></p>
+
+    <button id="btnSumar">Sumar 1</button>
+
+
+<body>
+    
+    <script>
+
+        const contador = document.getElementById('contador');
+
+        const boton = document.getElementById('btnSumar');
+
+        let conteo = 0;
+
+        boton.addEventListener("click", function(){
+
+            contador.textContent = ++conteo;
+
+        });
+
+    </script>
+
+</body>
+</html>

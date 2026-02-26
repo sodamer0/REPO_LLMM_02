@@ -1,0 +1,62 @@
+<!--
+EJERCICIO 6 · (querySelector)
+Enunciado
+Dado el siguiente HTML:
+<section>
+  <p>Primer párrafo</p>
+  <p>Segundo párrafo</p>
+</section>
+    1. Selecciona solo el primer párrafo.
+    2. Cambia su color de texto a rojo.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio06B2</title>
+    <style>
+
+    body{
+        background-color: aquamarine;
+    }
+
+    .Parrafo1 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:larger;
+        font-style: italic;
+    }
+    #Parrafo2 {
+
+        font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:large;
+        font-variant: small-caps;
+  
+
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicio 6 Boletín 2 (MANEJO DOM)</h1>
+
+    <section>
+
+        <p class="Parrafo1">Primer párrafo</p>
+
+        <p id="Parrafo2">Segundo párrafo</p>
+
+    </section>
+    
+    <script>
+
+        const parrafoRojo = document.querySelector(".Parrafo1");
+
+        parrafoRojo.style.color = "red";
+
+    </script>
+
+</body>
+</html>
+

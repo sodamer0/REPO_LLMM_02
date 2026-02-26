@@ -1,0 +1,120 @@
+================================================================
+BOLETÍN 1 - VARIABLES Y OPERACIONES (Nivel: Examen)
+================================================================
+
+EJERCICIO 1 💰
+Has hecho una compra y conoces el precio del producto, su IVA y un descuento promocional.
+Escribe un script que calcule el precio final aplicando primero el IVA y después el
+descuento sobre el total con IVA.
+
+Datos de prueba:
+Precio: 200€
+IVA: 21%
+Descuento: 10%
+
+Resultado esperado: 217.80 €
+
+
+----------------------------------------------------------------
+
+EJERCICIO 2 🔲
+En variables tienes la base y la altura de un rectángulo. Escribe un programa que
+calcule área y perímetro, y que además indique si se trata de un cuadrado (base === altura).
+
+Datos de prueba:
+Base: 40
+Altura: 40
+
+Resultado esperado:
+Área: 1600
+Perímetro: 160
+¿Es cuadrado? true
+
+
+----------------------------------------------------------------
+
+EJERCICIO 3 🕐
+Pide al usuario su nombre con un prompt y salúdale con "Buenos días", "Buenas tardes"
+o "Buenas noches" según la hora actual del sistema.
+
+- Mañana: 6:00 - 12:59 → "Buenos días"
+- Tarde: 13:00 - 20:59 → "Buenas tardes"  
+- Noche: 21:00 - 5:59 → "Buenas noches"
+
+
+----------------------------------------------------------------
+
+EJERCICIO 4 🔢
+Pide al usuario cuántos números quiere introducir, luego pídelos uno a uno con un bucle
+y muestra la media de todos ellos.
+
+Ejemplo de interacción:
+¿Cuántos números? 3
+Número 1: 10
+Número 2: 20
+Número 3: 30
+La media es: 20
+
+
+----------------------------------------------------------------
+
+EJERCICIO 5 ⛽
+Pide al usuario: litros de combustible, kilómetros de ida y kilómetros de vuelta. Calcula:
+1. Consumo total en l/km (litros / km totales)
+2. Rendimiento en km/l (km totales / litros)
+
+Datos de prueba:
+Litros: 20
+Km ida: 80
+Km vuelta: 70
+
+Resultado esperado:
+Consumo: 0.13 l/km
+Rendimiento: 7.5 km/l
+
+
+----------------------------------------------------------------
+
+EJERCICIO 6 ⏱️
+Pide al usuario una cantidad de segundos y conviértela a formato horas:minutos:segundos.
+
+Ejemplo:
+Segundos: 3665
+Resultado: 1:1:5  (1 hora, 1 minuto, 5 segundos)
+
+
+----------------------------------------------------------------
+
+EJERCICIO 7 🔢🔢
+Pide al usuario un número de 3 dígitos y muestra por separado las centenas,
+decenas y unidades usando solo operaciones aritméticas (sin convertir a string).
+
+Ejemplo:
+Número: 456
+Centenas: 4
+Decenas: 5
+Unidades: 6
+
+
+----------------------------------------------------------------
+
+EJERCICIO 8 🔄
+Tienes TRES variables: a, b, c. Escribe un programa que haga un intercambio circular:
+el valor de a pasa a b, el de b pasa a c, y el de c pasa a a.
+No uses arrays ni asignación múltiple.
+
+Antes: a=10, b=20, c=30  
+Después: a=30, b=10, c=20
+
+
+----------------------------------------------------------------
+
+EJERCICIO 9 ✨
+Escribe un script que, dado un número, devuelva true si es par Y múltiplo de 5, y false en caso contrario. No uses condicionales (if), solo operadores lógicos y aritméticos.
+
+Ejemplos:
+10 → true  (par y múltiplo de 5)
+15 → false (impar)
+20 → true
+7  → false
+

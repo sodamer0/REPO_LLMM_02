@@ -1,0 +1,65 @@
+<!--
+EJERCICIO 1 🔄
+Dado el siguiente HTML:
+<h1 id="titulo">Bienvenido</h1>
+<button id="btnToggle">Alternar</button>
+
+Escribe JavaScript para que, al pulsar el botón, el texto del <h1> alterne entre
+"Bienvenido" y "Hola Mundo" cada vez que se haga click.
+
+----------------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01 BOLETÍN 4 - REPASO DOM</title>
+     <script src="Ejercicio01B3JS.js" defer></script>
+
+</head>
+
+<body>
+
+    <h1 id="titulo">Bienvenido</h1>
+
+    <button id="btnToggle">Mensaje2</button>
+
+    <button id="btn2">Mensaje1</button>
+
+    <button id="btn3">ALTERNAR</button>
+
+</body>
+
+    <script>
+
+        const boton = document.getElementById('btnToggle');
+
+        const boton2 = document.getElementById('btn2');
+
+        const boton3 = document.getElementById('btn3');
+        
+        const Titulo = document.getElementById('titulo');
+
+        boton.addEventListener("click", function() {
+
+            Titulo.textContent = "¡Hola, Mundillo!";
+
+        });
+
+        boton2.addEventListener("click", function() {
+
+        Titulo.textContent = "Bienvenido";
+
+        });
+
+        boton3.addEventListener("click", function() {
+
+        Titulo.textContent = (Titulo.textContent === "Bienvenido") ? "¡Hola, Mundillo!" : "Bienvenido";
+
+        });
+
+    </script>
+
+</html>

@@ -1,3 +1,10 @@
+<!--EJERCICIO 4 · (selección y cambio de texto)
+Enunciado
+Dado el siguiente HTML:
+<p id="mensaje">Texto original</p>
+    1. Selecciona el párrafo.
+    2. Cambia su texto a "Texto modificado con JavaScript".
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,11 +33,13 @@
 
 
         const mensajillo = document.getElementById('mensaje');
-        mensajillo.textContent = 'Texto Modificado con JavaSript';
+        mensajillo.textContent = 'Texto Modificado con JavaScript';
 
         boton.addEventListener("click", () => {
-            mensaje.textContent = "Texto Original 2";
+            mensaje.textContent = "Texto Modificado again con JavaScript+Listener";
         } );
+
+        
 
     </script>
 </body>

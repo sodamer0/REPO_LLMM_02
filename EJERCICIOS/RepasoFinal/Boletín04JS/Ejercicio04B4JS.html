@@ -1,0 +1,50 @@
+<!--
+EJERCICIO 4 ✍️
+Dado el siguiente HTML:
+<input type="text" id="miInput" placeholder="Escribe algo...">
+<button id="btnMostrar">Mostrar</button>
+<p id="resultado"></p>
+
+Al pulsar el botón, toma el valor del input y muéstralo en el párrafo con el formato:
+"Has escrito: [valor]".
+----------------------------------------------------------------
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01 BOLETÍN 4 - REPASO DOM</title>
+
+</head>
+
+<body>
+    <input type="text" id="miInput" placeholder="Escribe algo...">
+
+    <button id="btnMostrar">Mostrar</button>
+
+    <p id="resultado"></p>
+
+
+    <script>
+
+        const Input = document.getElementById('miInput');
+
+        const boton = document.getElementById('btnMostrar');
+
+        const resultado = document.getElementById('resultado');
+
+        boton.addEventListener("click", function() {
+
+            resultado.textContent = `${Input.value}`;
+
+
+        });
+
+    </script>
+
+    
+</body>
+</html>

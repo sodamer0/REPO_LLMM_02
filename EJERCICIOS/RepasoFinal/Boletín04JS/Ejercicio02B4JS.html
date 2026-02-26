@@ -1,0 +1,48 @@
+<!--
+EJERCICIO 2 🎨
+Dado el siguiente HTML:
+<p class="texto">Párrafo 1</p>
+<p class="texto">Párrafo 2</p>
+<p class="texto">Párrafo 3</p>
+<p class="texto">Párrafo 4</p>
+
+Selecciona todos los párrafos y aplica colores alternos: los impares (1º, 3º...) en azul,
+los pares (2º, 4º...) en rojo.
+----------------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01 BOLETÍN 4 - REPASO DOM</title>
+
+</head>
+<body>
+
+    <p class="texto">Párrafo 1</p>
+
+    <p class="texto">Párrafo 2</p>
+
+    <p class="texto">Párrafo 3</p>
+
+    <p class="texto">Párrafo 4</p>
+
+
+    <script>
+
+        const parrafos = document.querySelectorAll('.texto');
+
+        let i = 0;
+
+        parrafos.forEach((element,i) => {
+            
+            element.style.color = i % 2 === 0 ? "blue" : "red";
+ 
+        });
+
+    </script>
+    
+</body>
+</html>

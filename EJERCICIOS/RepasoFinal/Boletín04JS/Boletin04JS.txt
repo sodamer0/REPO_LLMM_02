@@ -1,0 +1,109 @@
+================================================================
+BOLETÍN 2 - DOM Y EVENTOS (Nivel: Examen)
+================================================================
+
+EJERCICIO 1 🔄
+Dado el siguiente HTML:
+<h1 id="titulo">Bienvenido</h1>
+<button id="btnToggle">Alternar</button>
+
+Escribe JavaScript para que, al pulsar el botón, el texto del <h1> alterne entre
+"Bienvenido" y "Hola Mundo" cada vez que se haga click.
+
+
+----------------------------------------------------------------
+
+EJERCICIO 2 🎨
+Dado el siguiente HTML:
+<p class="texto">Párrafo 1</p>
+<p class="texto">Párrafo 2</p>
+<p class="texto">Párrafo 3</p>
+<p class="texto">Párrafo 4</p>
+
+Selecciona todos los párrafos y aplica colores alternos: los impares (1º, 3º...) en azul,
+los pares (2º, 4º...) en rojo.
+
+
+----------------------------------------------------------------
+
+EJERCICIO 3 🔢
+Dado el siguiente HTML:
+<p>Contador: <span id="contador">0</span></p>
+<button id="btnSumar">Sumar 1</button>
+
+Escribe JavaScript para que cada click en el botón incremente en 1 el número mostrado
+en el <span>.
+
+
+----------------------------------------------------------------
+
+EJERCICIO 4 ✍️
+Dado el siguiente HTML:
+<input type="text" id="miInput" placeholder="Escribe algo...">
+<button id="btnMostrar">Mostrar</button>
+<p id="resultado"></p>
+
+Al pulsar el botón, toma el valor del input y muéstralo en el párrafo con el formato:
+"Has escrito: [valor]".
+
+
+----------------------------------------------------------------
+
+EJERCICIO 5 ✨
+Dado el siguiente HTML y CSS:
+<style>
+  .caja { width: 100px; height: 100px; background: lightgray; margin: 5px; }
+  .activo { background: green; color: white; }
+</style>
+
+<div class="caja">Caja 1</div>
+<div class="caja">Caja 2</div>
+<div class="caja">Caja 3</div>
+<button id="btnActivar">Activar cajas</button>
+
+Al pulsar el botón, añade la clase "activo" a todas las cajas usando classList.add().
+
+
+----------------------------------------------------------------
+
+EJERCICIO 6 🔍
+Dado el siguiente HTML:
+<section>
+  <p>Primer párrafo</p>
+  <p>Segundo párrafo</p>
+  <p>Tercer párrafo</p>
+</section>
+
+1. Selecciona solo el SEGUNDO párrafo usando querySelector (sin usar índices ni bucles).
+2. Cambia su color de texto a rojo y su tamaño a 20px.
+
+
+----------------------------------------------------------------
+
+EJERCICIO 7 🎯
+Dado el siguiente HTML:
+<button id="btn">Pulsar</button>
+<p id="texto">Esperando acción...</p>
+<p id="contador">Clicks: 0</p>
+
+1. Cuando se haga click en el botón:
+   - Cambia el texto del párrafo #texto a "Botón pulsado"
+   - Incrementa en 1 el número mostrado en #contador
+
+
+----------------------------------------------------------------
+
+EJERCICIO 8 📝
+Dado el siguiente HTML:
+<ul>
+  <li class="nota">Nota 1</li>
+  <li class="nota">Nota 2</li>
+  <li class="nota">Nota 3</li>
+</ul>
+<button id="btnAprobar">Aprobar todas</button>
+<button id="btnSuspender">Suspender todas</button>
+
+Escribe el código JavaScript para:
+1. Al pulsar "Aprobar todas": cambia el texto de todas las notas a "Aprobado" y el color
+ a verde.
+2. Al pulsar "Suspender todas": cambia el texto a "Suspenso" y el color a rojo.

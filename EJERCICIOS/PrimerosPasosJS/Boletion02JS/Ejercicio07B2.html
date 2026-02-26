@@ -1,0 +1,46 @@
+<!--
+EJERCICIO 7 · (evento click)
+Enunciado
+Observa el siguiente HTML:
+<button id="btn">Pulsar</button>
+<p id="texto">Esperando acción...</p>
+    1. Selecciona el botón.
+    2. Cuando se haga click:
+        ◦ Cambia el texto del párrafo a "Botón pulsado"
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 Boletín 2 (MANEJO DOM)</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h2>Ejercicio 7 Boletín 2 (MANEJO DOM)</h2>
+
+    <button id="btn">Pulsar</button>
+
+    <p id="texto">Esperando acción...</p>
+
+    <script>
+
+        const accionar = document.getElementById("texto");
+
+        const btnPulsar = document.getElementById('btn');
+
+        btnPulsar.addEventListener("click", function() {
+
+            texto.textContent = "BOTÓN PULSADO"
+
+        });
+
+    </script>
+
+</body>
+</html>

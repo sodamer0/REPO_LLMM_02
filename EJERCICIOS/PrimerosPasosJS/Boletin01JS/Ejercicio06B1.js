@@ -1,0 +1,25 @@
+/*
+EJERCICIO 6
+Cambio de unidades. en este ejercicio debes convertir a segundos una medida de tiempo
+dada en horas y minutos.
+Recuerda una hora son 60 minutos y cada minuto son 60 segundos.
+horas : 2
+minutos 30
+Resultado 2*60*60 + 30*60 = 9000 segundos
+          
+************************************************************************************
+*/
+
+const prompt = require('prompt-sync')();
+
+let horas = parseInt(prompt('Introduzca las horas transcurridas: '));
+
+let minutos = parseInt(prompt('Introduzca los minutos transcurridos: '));
+
+let horasAsegundos = (horas * 60 * 60);
+
+let minutosAsegundos = (minutos * 60);
+
+let totalSegundos = parseInt((horasAsegundos + minutosAsegundos));
+2
+console.log(`2 horas y 30 minutos son ${totalSegundos} segundos.`);
